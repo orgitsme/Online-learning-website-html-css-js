@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #08a752;
+            color: white;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .intro h2 {
+            font-size: 3rem;
+            margin-bottom: 5px;
+        }
+
+        .intro h1 {
+            font-size: 5rem;
+            color: rgb(50, 222, 11);
+            margin-left: 100px;
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .services-header h1 {
+            font-size: 3rem;
+            color: #50fa7b;
+            animation: fadeInDown 1s;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 50px auto 0;
+            padding: 20px;
+            background: linear-gradient(to right, #55b550, #398b37);
+            animation: fadeIn 1.5s;
+        }
+
+        .service-card {
+            background: linear-gradient(#5889e9, #000);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+            animation: float 4s ease-in-out infinite;
+            text-decoration: none;
+            color: white;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .service-card h3 {
+            color: #50fa7b;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @media (max-width: 800px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="home.html" style="text-decoration: none;">
+        <button id="homeButton" title="Home" style="background: none; border: none; cursor: pointer;">
+            <img src="images/home-icon.png" alt="Home" style="width: 20px; height: 20px;">
+        </button>
+    </a>
+
+    <div class="intro">
+        <h2>Welcome to Our Courses </h2>
+    </div>
+
+    <div class="services-header">
+       
+    </div>
+
+    <div class="services-grid">
+        <a href="https://web.citizenportal.gov.pk" target="_blank" class="service-card">
+            <img src="IMAGES/JAVA.JPG" height="214PX"alt="Complaints Service Image">
+            <h3>JAVA</h3>
+        </a>
+        <a href="https://pmdc.pk" target="_blank" class="service-card">
+            <img src="IMAGES/C++.JPG" alt="Healthcare Service Image">
+            <h3>C++</h3>
+        </a>
+        <a href="https://bor.punjab.gov.pk" target="_blank" class="service-card">
+            <img src="IMAGES/PYHTON.JPG" alt="Land Revenue Service Image">
+            <h3>PYTHON</h3>
+        </a>
+        <a href="https://www.hec.gov.pk/english/Pages/default.aspx" target="_blank" class="service-card">
+            <img src="IMAGES/C.JPG" alt="Education Service Image">
+            <h3>C#</h3>
+        </a>
+        <a href="https://pakistan.gov.pk" target="_blank" class="service-card">
+            <img src="IMAGES/FLUTTER.png" alt="Government Department Service Image">
+            <h3>FLUTTER</h3>
+        </a>
+        <a href="https://www.wapda.gov.pk" target="_blank" class="service-card">
+            <img src="IMAGES/NODE.JPG" alt="Energy and Power Service Image">
+            <h3>NODE JS</h3>
+        </a>
+        <a href="https://www.wapda.gov.pk" target="_blank" class="service-card">
+            <img src="IMAGES/FULL.JPG" alt="Farmers Service Image">
+            <h3>FULL STACK DEVELOPER
+            </h3>
+        </a>
+        <a href="https://lgcd.punjab.gov.pk/chiniot_district_lgs_soe" target="_blank" class="service-card">
+            <img src="IMAGES/ANDRIOD.JPG"height="214PX" alt="Municipal Services Image">
+            <h3>ANDRIOD</h3>
+        </a>
+        <a href="https://www.pmo.gov.pk" target="_blank" class="service-card">
+            <img src="IMAGES/SEO.JPG" height="214PX" alt="PM House Service Image">
+            <h3>SEO</h3>
+        </a>
+    </div>
+</body>
+</html>

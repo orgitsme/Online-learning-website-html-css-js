@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f5a4b8, #d1c4e9);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: calc(100% - 22px);
+        }
+        input[type="submit"] {
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 15px;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        input[type="submit"]:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+        <form>
+            
+
+            <label for="schooler-name">NAME:</label>
+            <div style="display: flex; gap: 10px;">
+                <input type="text" id="schooler-first-name" name="schooler-first-name" placeholder="First" required style="flex: 1;">
+                <input type="text" id="schooler-last-name" name="schooler-last-name" placeholder="Last" required style="flex: 1;">
+            </div>
+
+            <label for="parent-name">S/o  </label>
+            <div style="display: flex; gap: 10px;">
+                <input type="text" id="parent-first-name" name="parent-first-name" placeholder="First" required style="flex: 1;">
+                <input type="text" id="parent-last-name" name="parent-last-name" placeholder="Last" required style="flex: 1;">
+            </div>
+
+            <label for="parent-phone">NUMBER:</label>
+            <input type="tel" id="parent-phone" name="parent-phone" placeholder="### ### ####" required>
+
+            <label for="parent-email">EMAIL:</label>
+            <input type="email" id="parent-email" name="parent-email" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
